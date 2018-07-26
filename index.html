@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+			<meta charset="UTF-8/>
+			<meta name="viewport" content="width=device-width,initial-scale=1.0">
+			<title>ClickMe Project</title>
+</head>
+<body style="background-color:powderblue;">
+<center>
+<p id="display" style="color:red;"></p>
+<script>
+var x=0;
+function  Clickme(){
+x=x+1;
+
+if (x > 20) {
+    x=0;
+	alert("Reset Number");
+}
+document.getElementById("display").innerHTML=x
+}
+</script>
+<div style="background-color:MediumSeaGreen;">
+<button class="button" onclick="Clickme()">Click Me!</button>
+</div>
+</center>
+</body>
+</html>
+
